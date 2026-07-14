@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--GOOGLE FONT HEAD CODE-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>HOME</title>
+         <nav-bar>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                 <li><a href="About.html">ABOUT AND CONTACT</a></li>
+                 <li><a href="PROGRAMMES.html">PROGRAMMES</a></li>
+                 <li><a href="STAFF.html">STAFF</a></li>
+                 <li><a href="FAQ.html">FAQ's</a></li>
+                <li><a href="NOTICES.html">NOTICES AND ANNOUNCEMENT</a></li>
+            </ul>
+        </nav-bar>
+</head>
+<!--ANNOUNCEMENT BAR-->
+<!--ADDING A NOTICES PAGE LINK-->
+
+<a href="NOTICES.html">
+<section class="announcement-bar">
+  <div class="announcement-content">
+    <h3>LATEST SCHOOL ANNOUNCEMENT</h3>
+    <ul id="announcement-list">
+      <li>Registration for the new term is now open!</li>
+    </ul>
+  </div>
+</section>
+</a>
+<body>
+<!--THERE SHOULD BE A SCHOOL LOGO AS THE HERO SECTION-->
+<!--FIRST SECTION FOR A PICTURE-->
+    <section class="hero">
+      <img src="p/heropic.jpg" alt="school logo">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to Our School</h1>
+        <p class="hero-sub">Holistic learning, future-ready skills, and caring community.</p>
+      </div>
+    </section>
+<!--HERO SECTION PICTURE END-->
+
+
+    <h1 class="content-header">WHY CHOOSE US</h1>
+<!--ADDING STYLISH CONTENT 3 CARDS-->
+<section class="card-section">
+    <div class="card"><h4 class="content1">  HOLISTIC DEVELOPMENT AND FUTURE-READY CURRICULUM</h4>
+    <p>WE  BALANCE RIGOROUS ACADEMIC WITH CHARACTER BUILDING.<br>
+        SPORTS AND ARTS ARE ARE ALL ESSENTIAL TO ENSURE EVERY STUDENT THRIVES <br>
+        OUR INTEGRATED PROGRAMMS PREPARE STUDENTS FOR THE DEMAND OF TOMMOROW's WORLD, NOT JUST TODAY CLASSROOM</p>
+  </div>
+    <div class="card"><h4 class="content">A SMALL CLASS SIZE AND EXPERT EDUCATORS</h4>
+        <p>WITH A LOW STUDENT-TO-TEACHER RATIO EVERY STUDENT GETS A PERSONALIZED ATTENTION<br>
+             NEED TO MASTER COMPLEC CONCEPT<br> WITH OUR FACULTY CONSISTING OF EXPECT <br> AND PASSIONATE SUBJECT-MATTER EXPECT,<br>
+            WE ARE DEDICATED TO CONTINUE <br> DEVELOPMENT</p></div>
+  <div class="card"><h4 class="content">A SAFE AND WELL PROTECTED SPACE</h4>
+    <p>WE CULTIVATE A COMMUNITY WHERE EVERY CHILD FEELS SEEN, HEARD OF AND FEEL<br> PART OF ANYTHING HE OR SHE DESIRE TO PROMOTE <br>
+       CONFIDENCE AND VALUE FOR THEIR UNIQUE ABILLITIES AND PERSPECTIVE</p>
+  </div>
+</section>
+<!--ADDING A BUTTON-->
+<div class="btn-div">
+    <a href="PROGRAMMES.html"><button class="button">CHECK OUT OUR PROGRAMMES</button></a>
+    <a href="STAFF.html"><button class="button">CHECK OUT OUR STAFF</button></a>
+    <a href="FAQ.html"><button class="button">CHECK OUT SOME FAQ's</button></a>
+</div>
+<!--NEED TO LEARN THIS ONE-->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.card').forEach(card => {
+    observer.observe(card);
+  });
+</script>
+
+</body>
+<footer>&COPY; ALL RIGHT RESERVED [SCHOOL NAME]</footer>
+</html>
