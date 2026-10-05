@@ -1,89 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--GOOGLE FONT HEAD CODE-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>HOME</title>
-         <nav-bar>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                 <li><a href="About.html">ABOUT AND CONTACT</a></li>
-                 <li><a href="PROGRAMMES.html">PROGRAMMES</a></li>
-                 <li><a href="STAFF.html">STAFF</a></li>
-                 <li><a href="FAQ.html">FAQ's</a></li>
-                <li><a href="NOTICES.html">NOTICES AND ANNOUNCEMENT</a></li>
-            </ul>
-        </nav-bar>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Granny's Child | Home</title>
 </head>
-<!--ANNOUNCEMENT BAR-->
-<!--ADDING A NOTICES PAGE LINK-->
-
-<a href="NOTICES.html">
-<section class="announcement-bar">
-  <div class="announcement-content">
-    <h3>LATEST SCHOOL ANNOUNCEMENT</h3>
-    <ul id="announcement-list">
-      <li>Registration for the new term is now open!</li>
-    </ul>
-  </div>
-</section>
-</a>
 <body>
-<!--THERE SHOULD BE A SCHOOL LOGO AS THE HERO SECTION-->
-<!--FIRST SECTION FOR A PICTURE-->
-    <section class="hero">
-      <img src="p/heropic.jpg" alt="school logo">
-      <div class="hero-content">
-        <h1 class="hero-title">Welcome to Our School</h1>
-        <p class="hero-sub">Holistic learning, future-ready skills, and caring community.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-mark" aria-label="Granny's Child School logo">
+        <div class="brand-icon">GC</div>
+        <div class="brand-text">
+          <span>Granny's</span>
+          <strong>Child</strong>
+        </div>
+      </div>
+
+      <nav-bar>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About &amp; Contact</a></li>
+          <li><a href="PROGRAMMES.html">Programmes</a></li>
+          <li><a href="STAFF.html">Staff</a></li>
+          <li><a href="FAQ.html">FAQs</a></li>
+          <li><a href="NOTICES.html">Notices</a></li>
+        </ul>
+      </nav-bar>
+    </div>
+  </header>
+
+  <a href="NOTICES.html" aria-label="View notices and announcements">
+    <section class="announcement-bar">
+      <div class="announcement-content">
+        <h3>Latest School Update</h3>
+        <ul id="announcement-list">
+          <li>Registration for the new term is now open!</li>
+        </ul>
       </div>
     </section>
-<!--HERO SECTION PICTURE END-->
+  </a>
 
+  <main>
+    <section class="hero">
+      <img src="P/pexels-william-fortunato-6140710.jpg" alt="Students learning together in a bright classroom">
+      <div class="hero-content">
+        <h1 class="hero-title">A brighter future starts here.</h1>
+        <p class="hero-sub">Holistic learning, future-ready skills, and a nurturing community where every child can thrive.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="About.html">Book a Visit</a>
+          <a class="secondary-btn" href="PROGRAMMES.html">Explore Programmes</a>
+        </div>
+      </div>
+    </section>
 
-    <h1 class="content-header">WHY CHOOSE US</h1>
-<!--ADDING STYLISH CONTENT 3 CARDS-->
-<section class="card-section">
-    <div class="card"><h4 class="content1">  HOLISTIC DEVELOPMENT AND FUTURE-READY CURRICULUM</h4>
-    <p>WE  BALANCE RIGOROUS ACADEMIC WITH CHARACTER BUILDING.<br>
-        SPORTS AND ARTS ARE ARE ALL ESSENTIAL TO ENSURE EVERY STUDENT THRIVES <br>
-        OUR INTEGRATED PROGRAMMS PREPARE STUDENTS FOR THE DEMAND OF TOMMOROW's WORLD, NOT JUST TODAY CLASSROOM</p>
-  </div>
-    <div class="card"><h4 class="content">A SMALL CLASS SIZE AND EXPERT EDUCATORS</h4>
-        <p>WITH A LOW STUDENT-TO-TEACHER RATIO EVERY STUDENT GETS A PERSONALIZED ATTENTION<br>
-             NEED TO MASTER COMPLEC CONCEPT<br> WITH OUR FACULTY CONSISTING OF EXPECT <br> AND PASSIONATE SUBJECT-MATTER EXPECT,<br>
-            WE ARE DEDICATED TO CONTINUE <br> DEVELOPMENT</p></div>
-  <div class="card"><h4 class="content">A SAFE AND WELL PROTECTED SPACE</h4>
-    <p>WE CULTIVATE A COMMUNITY WHERE EVERY CHILD FEELS SEEN, HEARD OF AND FEEL<br> PART OF ANYTHING HE OR SHE DESIRE TO PROMOTE <br>
-       CONFIDENCE AND VALUE FOR THEIR UNIQUE ABILLITIES AND PERSPECTIVE</p>
-  </div>
-</section>
-<!--ADDING A BUTTON-->
-<div class="btn-div">
-    <a href="PROGRAMMES.html"><button class="button">CHECK OUT OUR PROGRAMMES</button></a>
-    <a href="STAFF.html"><button class="button">CHECK OUT OUR STAFF</button></a>
-    <a href="FAQ.html"><button class="button">CHECK OUT SOME FAQ's</button></a>
-</div>
-<!--NEED TO LEARN THIS ONE-->
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-      }
+    <section class="trust-bar" aria-label="School highlights">
+      <div class="stat-card">
+        <strong>600+</strong>
+        <span>Young learners supported</span>
+      </div>
+      <div class="stat-card">
+        <strong>12+</strong>
+        <span>Expert teachers</span>
+      </div>
+      <div class="stat-card">
+        <strong>3</strong>
+        <span>Learning pathways</span>
+      </div>
+      <div class="stat-card">
+        <strong>100%</strong>
+        <span>Care-first approach</span>
+      </div>
+    </section>
+
+    <h1 class="content-header">Why families choose us</h1>
+
+    <section class="card-section">
+      <article class="card">
+        <h4>Holistic learning for real-world success</h4>
+        <p>We blend academics, creativity, sports, and character development so every child grows in confidence and capability.</p>
+      </article>
+      <article class="card">
+        <h4>Small classes, personal attention</h4>
+        <p>With a supportive teacher-to-student ratio, our educators identify strengths early and help students reach their full potential.</p>
+      </article>
+      <article class="card">
+        <h4>Safe, welcoming and inspiring</h4>
+        <p>Our learning spaces are nurturing, secure, and built around respect, curiosity, and joy so students feel seen and valued.</p>
+      </article>
+    </section>
+
+    <div class="btn-div">
+      <a href="PROGRAMMES.html" class="button">Check out our programmes</a>
+      <a href="STAFF.html" class="button">Meet our staff</a>
+      <a href="FAQ.html" class="button">Read our FAQs</a>
+    </div>
+  </main>
+
+  <footer>&copy; All rights reserved. Granny's Child School</footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card').forEach((card) => {
+      observer.observe(card);
     });
-  }, { threshold: 0.2 });
-
-  document.querySelectorAll('.card').forEach(card => {
-    observer.observe(card);
-  });
-</script>
-
+  </script>
 </body>
-<footer>&COPY; ALL RIGHT RESERVED [SCHOOL NAME]</footer>
 </html>
