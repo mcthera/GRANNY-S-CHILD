@@ -20,7 +20,13 @@
         </div>
       </div>
 
-      <nav-bar>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav-bar class="main-nav" id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About &amp; Contact</a></li>
@@ -114,6 +120,16 @@
     document.querySelectorAll('.card').forEach((card) => {
       observer.observe(card);
     });
+
+    const toggleButton = document.querySelector('.nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    if (toggleButton && mainNav) {
+      toggleButton.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('open');
+        toggleButton.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
   </script>
 </body>
 </html>

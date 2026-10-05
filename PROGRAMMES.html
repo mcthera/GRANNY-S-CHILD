@@ -8,18 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
      <link rel="stylesheet" href="CSS/style.css">
     <title>PROGRAMMES</title>
-         <nav-bar>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                 <li><a href="About.html">ABOUT AND CONTACT</a></li>
-                 <li><a href="PROGRAMMES.html">PROGRAMMES</a></li>
-                 <li><a href="STAFF.html">STAFF</a></li>
-                 <li><a href="FAQ.html">FAQ's</a></li>
-                <li><a href="NOTICES.html">NOTICES AND ANNOUNCEMENT</a></li>
-            </ul>
-        </nav-bar>
 </head>
         <body>
+            <header class="site-header">
+                <div class="header-inner">
+                    <div class="brand-mark" aria-label="Granny's Child School logo">
+                        <div class="brand-icon">GC</div>
+                        <div class="brand-text">
+                            <span>Granny's</span>
+                            <strong>Child</strong>
+                        </div>
+                    </div>
+
+                    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <nav-bar class="main-nav" id="main-nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="About.html">ABOUT AND CONTACT</a></li>
+                            <li><a href="PROGRAMMES.html">PROGRAMMES</a></li>
+                            <li><a href="STAFF.html">STAFF</a></li>
+                            <li><a href="FAQ.html">FAQ's</a></li>
+                            <li><a href="NOTICES.html">NOTICES</a></li>
+                        </ul>
+                    </nav-bar>
+                </div>
+            </header>
             <h1 class="pheader" style="text-align: center;">OUR PROGRAMMES</h1>
             <section="pictemplate">
                 <h3 style="text-align: center;">WE OFFER A VARIETY OF SUBJECTS IN OUR CURRICULUM<br> AS WELL AS SIGN LANGUAGE</h3>
@@ -47,6 +65,17 @@
 
             <p class="little-p">LET YOUR CHILD JOIN US IN THIS AMAZING VENTURE!!!</p>
 
+            <script>
+              const toggleButton = document.querySelector('.nav-toggle');
+              const mainNav = document.getElementById('main-nav');
+
+              if (toggleButton && mainNav) {
+                toggleButton.addEventListener('click', () => {
+                  const isOpen = mainNav.classList.toggle('open');
+                  toggleButton.setAttribute('aria-expanded', String(isOpen));
+                });
+              }
+            </script>
         </body>
         <footer>&COPY; ALL RIGHT RESERVED [SCHOOL NAME]</footer>
 </html>

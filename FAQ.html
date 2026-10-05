@@ -9,17 +9,36 @@
      <link rel="stylesheet" href="CSS/style.css">
     <title>FAQ's</title>
 </head>
-         <nav-bar>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                 <li><a href="About.html">ABOUT AND CONTACT</a></li>
-                 <li><a href="PROGRAMMES.html">PROGRAMMES</a></li>
-                 <li><a href="STAFF.html">STAFF</a></li>
-                 <li><a href="FAQ.html">FAQ's</a></li>
-                <li><a href="NOTICES.html">NOTICES AND ANNOUNCEMENT</a></li>
-            </ul>
-        </nav-bar>
-        <body> <!--TITLE-->
+        <body>
+            <header class="site-header">
+                <div class="header-inner">
+                    <div class="brand-mark" aria-label="Granny's Child School logo">
+                        <div class="brand-icon">GC</div>
+                        <div class="brand-text">
+                            <span>Granny's</span>
+                            <strong>Child</strong>
+                        </div>
+                    </div>
+
+                    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <nav-bar class="main-nav" id="main-nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="About.html">ABOUT AND CONTACT</a></li>
+                            <li><a href="PROGRAMMES.html">PROGRAMMES</a></li>
+                            <li><a href="STAFF.html">STAFF</a></li>
+                            <li><a href="FAQ.html">FAQ's</a></li>
+                            <li><a href="NOTICES.html">NOTICES</a></li>
+                        </ul>
+                    </nav-bar>
+                </div>
+            </header>
+             <!--TITLE-->
             <section class="faq-section">
                 <h2>FREQUENTLY ASKED QUESTIONS</h2>
                                  <!--FIRST ITEM OR QUESTION-->                          <!--POP UP ANSWER WHEN CLICKED ON ARROW-->
@@ -43,6 +62,17 @@
 <details class="faq-item"> <summary>DO YOU OFFER FEEDING PROGRAMME SERVICE?</summary><p>Our school gate opens at 7:39 AM for supervised arrival. Official school hours are drom 8:00 AM to 3:00 PM for all levels or grades</p> </details>
 <details class="faq-item"> <summary>WHAT IS THE COST OF CANTEEN FEES?</summary><p>Our school gate opens at 7:39 AM for supervised arrival. Official school hours are drom 8:00 AM to 3:00 PM for all levels or grades</p> </details>
         </section>
+        <script>
+          const toggleButton = document.querySelector('.nav-toggle');
+          const mainNav = document.getElementById('main-nav');
+
+          if (toggleButton && mainNav) {
+            toggleButton.addEventListener('click', () => {
+              const isOpen = mainNav.classList.toggle('open');
+              toggleButton.setAttribute('aria-expanded', String(isOpen));
+            });
+          }
+        </script>
         </body>
         <footer>&COPY; ALL RIGHT RESERVED [SCHOOL NAME]</footer>
 </html>
